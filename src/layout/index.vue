@@ -1,20 +1,24 @@
 <template>
+  <div>
+    <Header />
   <div class="app-wrapper">
-    <sidebar class="sidebar-container" />
-    <div class="main-container">
-      <app-main />
-    </div>
+      <sidebar class="sidebar-container" />
+      <div class="main-container">
+        <app-main />
+      </div>
+  </div>
   </div>
 </template>
 
 <script>
-import { AppMain, Sidebar } from './components'
+import { Header, AppMain, Sidebar } from './components'
 
 export default {
   name: 'Layout',
   components: {
+    Header,
     AppMain,
-    Sidebar
+    Sidebar,
   },
 }
 </script>
@@ -26,6 +30,7 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
+    top:50px;
 
     &.mobile.openSidebar {
       position: fixed;

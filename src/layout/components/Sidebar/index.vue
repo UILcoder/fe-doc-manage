@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-scrollbar wrap-class="scrollbar-wrapper">
+    <el-scrollbar wrap-class="scrollbar-wrapper" style="margin-right: -18px">
       <el-menu
         :default-active="activeMenu"
         :background-color="variables.menuBg"
@@ -44,3 +44,4 @@ export default {
   }
 }
 </script>
+
