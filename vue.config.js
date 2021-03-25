@@ -33,6 +33,25 @@ module.exports = {
     }
   },
   chainWebpack: (config) => {
+
+    // set svg-sprite-loader
+    config.module
+      .rule('svg')
+      .exclude.add(resolve('src/icons'))
+      .end();
+
+    config.module
+      .rule('icons')
+      .test(/\.svg$/)
+      .include.add(resolve('src/icons'))
+      .end()
+      .use('svg-sprite-loader')
+      .loader('svg-sprite-loader')
+      .options({
+        symbolId: 'icon-[name]'
+      })
+      .end();
+
     config.plugin('html').tap((args) => {
       args[0].STATIC_URL = projectConfig.STATIC_URL
       args[0].ICONFONT_URL = `${projectConfig.STATIC_URL}/font/${projectConfig.ICONFONT_VERSION}`

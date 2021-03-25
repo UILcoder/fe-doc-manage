@@ -6,6 +6,9 @@ import service from './services'
 import './plugins/element-ui'
 import { preventReClick, defaultImg } from './directive/index'
 import './assets/styles/normalize.css'
+import './icons/index'
+
+
 
 Vue.config.productionTip = false;
 

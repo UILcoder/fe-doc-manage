@@ -45,9 +45,9 @@ export default {
     font-size: 1rem;
 
     .proIcon{
-      width: 30px;
-      height: 30px;
-      margin-right: 1rem;
+      width: 50px;
+      height: 50px;
+      margin-right: 2px;
     }
   }
 

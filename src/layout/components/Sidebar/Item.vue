@@ -25,17 +25,21 @@ export default {
     }
 
     if (title) {
-      vnodes.push(<span slot='title'>{(title)}</span>)
+      vnodes.push(<span class='title' slot='title'>{(title)}</span>)
     }
     return vnodes
   }
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .sub-el-icon {
   color: currentColor;
   width: 1em;
   height: 1em;
+}
+
+.title {
+  margin-left: 0.5rem;
 }
 </style>
