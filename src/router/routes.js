@@ -21,7 +21,7 @@ export const constantRoutes = [
         meta: {
           title: '首页', icon: 'home'
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Home.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/home/index'),
       },
 
     ]
@@ -38,7 +38,7 @@ export const constantRoutes = [
         meta: {
           title: '个人信息', icon: 'user'
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/peopleInfo/index'),
       },
 
     ]
@@ -54,22 +54,22 @@ export const constantRoutes = [
         meta: {
           title: '楼宇列表', icon: 'build', noHeader: true, affix: true
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/buildList/index'),
       },
     ]
   },
   {
-    path: '/docManage',
+    path: '/list',
     component: Layout,
-    redirect: '/docManage',
+    redirect: '/list',
     children: [
       {
-        path: 'docManage',
-        name: 'docManage',
+        path: 'list',
+        name: 'list',
         meta: {
           title: '宿舍列表', icon: 'doc', noHeader: true, affix: true
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/docList/index'),
       },
     ]
   },
@@ -84,7 +84,7 @@ export const constantRoutes = [
         meta: {
           title: '学生列表', icon: 'student', noHeader: true, affix: true
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/studentList/index'),
       },
     ]
   },
@@ -100,15 +100,15 @@ export const constantRoutes = [
         meta: {
           title: '损坏报修', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/blackSerive/repair/index'),
       },
       {
         path: 'repairList',
         name: 'repairList',
         meta: {
-          title: '保修列表', icon: 'use', noHeader: true, affix: true
+          title: '报修列表', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import('@/views/Home')
+        component: () => import('@/views/blackSerive/repairList/index')
       }
     ]
   },
@@ -124,7 +124,7 @@ export const constantRoutes = [
         meta: {
           title: '电费充值', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/lifeSerive/eleBuy/index'),
       },
       {
         path: 'schoolBuy',
@@ -132,7 +132,7 @@ export const constantRoutes = [
         meta: {
           title: '校园网充值', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import('@/views/Home')
+        component: () => import('@/views/lifeSerive/schoolBuy/index')
       }
     ]
   },
@@ -148,7 +148,7 @@ export const constantRoutes = [
         meta: {
           title: '宿舍评分', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import(/* webpackChunkName: "test" */ '@/views/Test.vue'),
+        component: () => import(/* webpackChunkName: "test" */ '@/views/static/docStatic/index'),
       },
       {
         path: 'repairStatic',
@@ -156,7 +156,7 @@ export const constantRoutes = [
         meta: {
           title: '报修统计', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import('@/views/Home')
+        component: () => import('@/views/static/repairStatic/index')
       },
       {
         path: 'ManageStatic',
@@ -164,7 +164,7 @@ export const constantRoutes = [
         meta: {
           title: '楼管评分', icon: 'use', noHeader: true, affix: true
         },
-        component: () => import('@/views/Home')
+        component: () => import('@/views/static/manageStatic/index')
       }
     ]
   },
