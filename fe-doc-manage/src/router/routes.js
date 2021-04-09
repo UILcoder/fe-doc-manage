@@ -143,8 +143,8 @@ export const constantRoutes = [
     meta: { title: '统计中心', icon: 'static' },
     children: [
       {
-        path: 'docStatic',
-        name: 'docStatic',
+        path: 'Static',
+        name: 'Static',
         meta: {
           title: '宿舍评分', icon: 'use', noHeader: true, affix: true
         },
@@ -157,14 +157,6 @@ export const constantRoutes = [
           title: '报修统计', icon: 'use', noHeader: true, affix: true
         },
         component: () => import('@/views/static/repairStatic/index')
-      },
-      {
-        path: 'ManageStatic',
-        name: 'ManageStatic',
-        meta: {
-          title: '楼管评分', icon: 'use', noHeader: true, affix: true
-        },
-        component: () => import('@/views/static/manageStatic/index')
       }
     ]
   },

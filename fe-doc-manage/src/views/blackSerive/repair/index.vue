@@ -7,10 +7,7 @@
             <el-input v-model="formInline.name" placeholder="请输入负责人姓名"></el-input>
           </el-form-item>
           <el-form-item label="报修时间:">
-            <el-date-picker
-              v-model="formInline.dateTime"
-              type="datetime"
-              placeholder="选择日期时间">
+            <el-date-picker v-model="formInline.dateTime" type="datetime" placeholder="选择日期时间">
             </el-date-picker>
           </el-form-item>
           <el-form-item label="楼宇号:">
@@ -95,37 +92,41 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-form-item::before{
-  content: '*';
+.el-form-item::before {
+  content: "*";
   position: relative;
   left: -13px;
   color: red;
   top: 32px;
 }
-.el-form-item:last-child:before{
+.el-form-item:last-child:before {
   content: "";
 }
-.el-form-item:last-child{
+.el-form-item:last-child {
   margin: 110px 0 0 70px;
 }
-.el-form-item{
+.el-form-item {
   margin-right: 30px;
-  margin-bottom:30px;
-  ::v-deep .el-textarea__inner{
-  width: 130% !important;
+  margin-bottom: 30px;
+  ::v-deep .el-textarea__inner {
+    width: 130% !important;
+  }
+  .el-button {
+    margin: 50px 0 0 50px;
+  }
+  .el-button:first-child {
+    margin-left: 300px;
+  }
 }
-}
-.alert{
+.alert {
   width: 70%;
   margin: 80px auto 0;
   text-align: center;
-  span{
+  span {
     color: red;
     font-size: 10px;
     display: block;
     line-height: 1.5em;
-
   }
 }
-
 </style>

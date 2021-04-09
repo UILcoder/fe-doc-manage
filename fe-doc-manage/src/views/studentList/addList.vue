@@ -1,9 +1,6 @@
 <template>
   <div>
-    <el-dialog
-      title="提示"
-      :visible.sync="dialogVisible"
-      width="60%">
+    <el-dialog title="新增学生列表" :visible.sync="dialogVisible" width="60%">
       <el-form :inline="true" :model="addlist" class="demo-form-inline">
         <el-form-item label="姓名:">
           <el-input v-model="addlist.name" placeholder="请输入姓名"></el-input>
@@ -25,7 +22,7 @@
         </el-form-item>
         <el-form-item label="所在楼宇:">
           <el-select v-model="addlist.buildName" placeholder="请选择所在楼宇">
-            <el-option  v-for="item in build" :key="item.value" :label="item.value" :value="item.value"></el-option>
+            <el-option v-for="item in build" :key="item.value" :label="item.value" :value="item.value"></el-option>
           </el-select>
         </el-form-item>
         <el-form-item label="宿舍号:">
@@ -33,9 +30,9 @@
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
-      <el-button @click="dialogVisible = false">取 消</el-button>
-      <el-button type="primary" @click="handle">确 定</el-button>
-    </span>
+        <el-button @click="dialogVisible = false">取 消</el-button>
+        <el-button type="primary" @click="handle">确 定</el-button>
+      </span>
     </el-dialog>
   </div>
 </template>
@@ -92,5 +89,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
