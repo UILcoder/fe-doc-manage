@@ -9,9 +9,7 @@ const productionGzipExtensions = ['js', 'css', 'vue'];
 const projectConfig = require('./src/config')
 
 const host = process.env.VUE_APP_REQUEST_HOST
-const projectId = process.env.VUE_APP_MOCK_PROJECT_ID
-const url = projectId ? `${projectId}` : `${host}`
-
+const url = `${host}`
 
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -21,13 +19,12 @@ module.exports = {
   publicPath: process.env.NODE_ENV !== 'development' ? projectConfig.STATIC_URL : '/',
   productionSourceMap: false, // 是否需要source map
   devServer: {
-    disableHostCheck: true,
     proxy: {
-      '/mobile': {
+      '/doc': {
         target: url,
         changeOrigin: true,
         pathRewrite: {
-          '^/mobile': ''
+          '^/doc': ''
         }
       }
     }
@@ -85,5 +82,5 @@ module.exports = {
         path.resolve(__dirname, 'src/assets/styles/variables.less')
       ]
     },
-  }
+  },
 }
