@@ -1,0 +1,140 @@
+// 用法：展示方式-水平对齐方式-垂直对齐方式
+// 展示：行：row、列: col
+// 水平对齐方式：left，center，right;
+// 垂直对齐方式: top，middle，bottom;
+.flexRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-left-top {
+  .flexRow();
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.row-left-middle {
+  .flexRow();
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row-left-bottom {
+  .flexRow();
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.row-center-top {
+  .flexRow();
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.row-center-middle {
+  .flexRow();
+  align-items: center;
+  justify-content: center;
+}
+
+.row-center-bottom {
+  .flexRow();
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.row-right-top {
+  .flexRow();
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.row-center-middle {
+  .flexRow();
+  align-items: center;
+  justify-content: center;
+}
+
+.row-center-bottom {
+  .flexRow();
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.row-right-top {
+  .flexRow();
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.row-right-middle {
+  .flexRow();
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.row-right-bottom {
+  .flexRow();
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.col-left-top {
+  .flexCol();
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col-left-middle {
+  .flexCol();
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col-left-bottom {
+  .flexCol();
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.col-center-top {
+  .flexCol();
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.col-center-middle {
+  .flexCol();
+  justify-content: center;
+  align-items: center;
+}
+
+.col-center-bottom {
+  .flexCol();
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.col-right-top {
+  .flexCol();
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.col-right-middle {
+  .flexCol();
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.col-right-bottom {
+  .flexCol();
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
