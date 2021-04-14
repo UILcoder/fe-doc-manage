@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+/lin-cms-koa/node_modules
 /dist
 
 
