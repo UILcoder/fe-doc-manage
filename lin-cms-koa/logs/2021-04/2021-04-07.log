@@ -1,0 +1,42 @@
+2021-04-07 15:58:13,088 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617782292761] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617782292761"
+    },
+    "body": {}
+}
+2021-04-07 15:58:13,098 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search?_time=1617782292761] from: ::ffff:127.0.0.1 costs: 18ms data:{
+    "param": {
+        "_time": "1617782292761"
+    },
+    "body": {}
+}
+2021-04-07 15:58:15,317 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617782295309] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617782295309"
+    },
+    "body": {}
+}
+2021-04-07 15:58:15,635 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617782295309] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617782295309"
+    },
+    "body": {}
+}
+2021-04-07 15:58:15,636 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617782295309] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617782295309"
+    },
+    "body": {}
+}
+2021-04-07 15:58:23,764 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617782303452] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {
+        "_time": "1617782303452"
+    },
+    "body": {}
+}
+2021-04-07 15:58:25,887 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617782305879] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617782305879"
+    },
+    "body": {}
+}

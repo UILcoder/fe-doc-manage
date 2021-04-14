@@ -1,0 +1,72 @@
+2021-03-30 15:48:50,079 DEBUG 860  --- [LAPTOP-UCE87BE9] - [GET] -> [/] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 15:48:50,160 DEBUG 860  --- [LAPTOP-UCE87BE9] - [GET] -> [/favicon.ico] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:46:51,299 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/save] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:47:27,713 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/save] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:47:40,313 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:08,762 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:14,559 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:15,671 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:19,503 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:20,378 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:21,029 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:21,604 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:49:45,545 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:50:02,432 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:50:02,471 DEBUG 15564  --- [LAPTOP-UCE87BE9] - [GET] -> [/favicon.ico] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 16:50:34,810 DEBUG 15772  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 22:30:26,179 DEBUG 6364  --- [LAPTOP-UCE87BE9] - [GET] -> [/] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-30 22:30:26,248 DEBUG 6364  --- [LAPTOP-UCE87BE9] - [GET] -> [/favicon.ico] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}

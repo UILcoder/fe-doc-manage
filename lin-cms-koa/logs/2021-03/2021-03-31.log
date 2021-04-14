@@ -1,0 +1,131 @@
+2021-03-31 11:08:23,042 DEBUG 16380  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-31 11:09:23,195 DEBUG 11956  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-31 11:12:07,622 DEBUG 19596  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-03-31 11:12:36,611 ERROR 19596  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token ' in JSON at position 15[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "{\r\n    \"class\":''\r\n}"[39m
+[31mpid: 19596[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-03-31 11:13:12,634 DEBUG 19596  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {
+        "class": 123
+    }
+}
+2021-03-31 11:18:28,352 DEBUG 19968  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "class": 123
+    }
+}
+[31m2021-03-31 11:20:39,886 ERROR 19968  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token ' in JSON at position 14[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "{\r\n    \"name\":'王小月',\r\n    \"sex\":'女',\r\n    \"studentId\":2704170119,\r\n    \r\n\r\n}"[39m
+[31mpid: 19968[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+[31m2021-03-31 11:20:41,340 ERROR 19968  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token ' in JSON at position 14[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "{\r\n    \"name\":'王小月',\r\n    \"sex\":'女',\r\n    \"studentId\":2704170119,\r\n    \r\n\r\n}"[39m
+[31mpid: 19968[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+[31m2021-03-31 11:20:42,028 ERROR 19968  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token ' in JSON at position 14[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "{\r\n    \"name\":'王小月',\r\n    \"sex\":'女',\r\n    \"studentId\":2704170119,\r\n    \r\n\r\n}"[39m
+[31mpid: 19968[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+[31m2021-03-31 11:20:43,551 ERROR 19968  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token ' in JSON at position 14[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "{\r\n    \"name\":'王小月',\r\n    \"sex\":'女',\r\n    \"studentId\":2704170119,\r\n    \r\n\r\n}"[39m
+[31mpid: 19968[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-03-31 11:23:48,702 DEBUG 19968  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 2704170119,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "build": "hfdjfh",
+        "docId": 5
+    }
+}
+2021-03-31 11:24:41,100 DEBUG 19968  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 2704170119,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "build": "hfdjfh",
+        "docId": 5
+    }
+}
+2021-03-31 11:24:57,033 DEBUG 8840  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 2704170119,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "build": "hfdjfh",
+        "docId": 5
+    }
+}
+2021-03-31 11:39:28,010 DEBUG 16668  --- [LAPTOP-UCE87BE9] - [GET] -> [/] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {}
+}
+2021-03-31 11:39:28,093 DEBUG 16668  --- [LAPTOP-UCE87BE9] - [GET] -> [/favicon.ico] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}

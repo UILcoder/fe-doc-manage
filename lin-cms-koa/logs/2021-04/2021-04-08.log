@@ -1,0 +1,623 @@
+2021-04-08 22:25:09,465 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617891909109] from: ::ffff:127.0.0.1 costs: 18ms data:{
+    "param": {
+        "_time": "1617891909109"
+    },
+    "body": {}
+}
+2021-04-08 22:25:09,473 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617891909109] from: ::ffff:127.0.0.1 costs: 23ms data:{
+    "param": {
+        "_time": "1617891909109"
+    },
+    "body": {}
+}
+2021-04-08 22:25:09,686 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617891909109] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617891909109"
+    },
+    "body": {}
+}
+2021-04-08 22:57:04,438 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/i] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 22:57:09,734 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/1] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 22:57:40,029 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 58ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 22:58:07,020 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 22:59:11,326 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 12ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 22:59:46,963 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617893986919] from: ::ffff:127.0.0.1 costs: 19ms data:{
+    "param": {
+        "_time": "1617893986919"
+    },
+    "body": {}
+}
+2021-04-08 22:59:46,967 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617893986919] from: ::ffff:127.0.0.1 costs: 27ms data:{
+    "param": {
+        "_time": "1617893986919"
+    },
+    "body": {}
+}
+2021-04-08 22:59:46,979 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617893986919] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617893986919"
+    },
+    "body": {}
+}
+2021-04-08 22:59:54,794 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:00:00,259 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617894000243] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617894000243"
+    },
+    "body": {}
+}
+2021-04-08 23:00:00,264 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617894000243] from: ::ffff:127.0.0.1 costs: 9ms data:{
+    "param": {
+        "_time": "1617894000243"
+    },
+    "body": {}
+}
+2021-04-08 23:00:00,276 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617894000243] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617894000243"
+    },
+    "body": {}
+}
+2021-04-08 23:00:45,061 DEBUG 19256  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:01:36,418 DEBUG 18000  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:01:38,250 DEBUG 18000  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:01:39,144 DEBUG 18000  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:01:39,927 DEBUG 18000  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:02:05,865 DEBUG 21728  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 11ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:02:42,990 DEBUG 22420  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617894162951] from: ::ffff:127.0.0.1 costs: 16ms data:{
+    "param": {
+        "_time": "1617894162951"
+    },
+    "body": {}
+}
+2021-04-08 23:02:42,996 DEBUG 22420  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617894162951] from: ::ffff:127.0.0.1 costs: 17ms data:{
+    "param": {
+        "_time": "1617894162951"
+    },
+    "body": {}
+}
+2021-04-08 23:02:43,008 DEBUG 22420  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617894162951] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617894162951"
+    },
+    "body": {}
+}
+2021-04-08 23:05:38,246 DEBUG 18060  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:06:00,259 DEBUG 10212  --- [LAPTOP-UCE87BE9] - [DELETE] -> [/doc/buildList/1] from: ::1 costs: 10ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:10:00,433 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+2021-04-08 23:10:43,338 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 22ms data:{
+    "param": {},
+    "body": {
+        "applyid": "123",
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:10:43,340 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:10:43","2021-04-08 23:10:43"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:10:43","2021-04-08 23:10:43"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:10:43","2021-04-08 23:10:43"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:10:52,080 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "applyid": 123,
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:10:52,082 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:52","2021-04-08 23:10:52"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:52","2021-04-08 23:10:52"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:52","2021-04-08 23:10:52"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:10:53,827 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "applyid": 123,
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:10:53,828 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:53","2021-04-08 23:10:53"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:53","2021-04-08 23:10:53"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:53","2021-04-08 23:10:53"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:10:55,139 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "applyid": 123,
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:10:55,143 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:55","2021-04-08 23:10:55"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:55","2021-04-08 23:10:55"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:10:55","2021-04-08 23:10:55"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:11:55,320 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617894715279] from: ::ffff:127.0.0.1 costs: 25ms data:{
+    "param": {
+        "_time": "1617894715279"
+    },
+    "body": {}
+}
+2021-04-08 23:11:55,323 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617894715279] from: ::ffff:127.0.0.1 costs: 22ms data:{
+    "param": {
+        "_time": "1617894715279"
+    },
+    "body": {}
+}
+[31m2021-04-08 23:11:55,326 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Query.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Query.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"SELECT `id`, `buildName`, `leader`, `sex`, `address`, `telphone`, `applyid`, `create_time`, `update_time`, `delete_time` FROM `buildList` AS `buildList` WHERE (`buildList`.`delete_time` IS NULL);"}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"SELECT `id`, `buildName`, `leader`, `sex`, `address`, `telphone`, `applyid`, `create_time`, `update_time`, `delete_time` FROM `buildList` AS `buildList` WHERE (`buildList`.`delete_time` IS NULL);"}[39m
+[31msql: "SELECT `id`, `buildName`, `leader`, `sex`, `address`, `telphone`, `applyid`, `create_time`, `update_time`, `delete_time` FROM `buildList` AS `buildList` WHERE (`buildList`.`delete_time` IS NULL);"[39m
+[31mparameters: undefined[39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:11:55,337 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617894715279] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617894715279"
+    },
+    "body": {}
+}
+2021-04-08 23:12:00,651 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "applyid": 123,
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:12:00,652 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:12:00","2021-04-08 23:12:00"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:12:00","2021-04-08 23:12:00"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489",123,"2021-04-08 23:12:00","2021-04-08 23:12:00"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:12:09,337 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "applyid": "123",
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:12:09,338 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:09","2021-04-08 23:12:09"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:09","2021-04-08 23:12:09"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:09","2021-04-08 23:12:09"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:12:10,396 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "applyid": "123",
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:12:10,397 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:10","2021-04-08 23:12:10"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:10","2021-04-08 23:12:10"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:10","2021-04-08 23:12:10"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:12:25,182 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {
+        "applyid": "123",
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:12:25,183 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:25","2021-04-08 23:12:25"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:25","2021-04-08 23:12:25"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:25","2021-04-08 23:12:25"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:12:26,186 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "applyid": "123",
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-08 23:12:26,188 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:26","2021-04-08 23:12:26"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:26","2021-04-08 23:12:26"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","123","2021-04-08 23:12:26","2021-04-08 23:12:26"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:12:31,535 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-08 23:13:15,001 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token , in JSON at position 193[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "    {\r\n        \"applyid\": \"必须传入id名\",\r\n        \"buildName\": \"必须传入楼宇名\",\r\n        \"leader\": \"必须传入负责人\",\r\n        \"sex\": \"必须传入性别\",\r\n        \"address\": \"必须传入地址\",\r\n        \"telphone\": \"必须传入手机号\"\r\n    },"[39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:13:20,849 DEBUG 23044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 11ms data:{
+    "param": {},
+    "body": {
+        "applyid": "必须传入id名",
+        "buildName": "必须传入楼宇名",
+        "leader": "必须传入负责人",
+        "sex": "必须传入性别",
+        "address": "必须传入地址",
+        "telphone": "必须传入手机号"
+    }
+}
+[31m2021-04-08 23:13:20,852 ERROR 23044  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyid' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["必须传入楼宇名","必须传入负责人","必须传入性别","必须传入地址","必须传入手机号","必须传入id名","2021-04-08 23:13:20","2021-04-08 23:13:20"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyid' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["必须传入楼宇名","必须传入负责人","必须传入性别","必须传入地址","必须传入手机号","必须传入id名","2021-04-08 23:13:20","2021-04-08 23:13:20"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyid`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["必须传入楼宇名","必须传入负责人","必须传入性别","必须传入地址","必须传入手机号","必须传入id名","2021-04-08 23:13:20","2021-04-08 23:13:20"][39m
+[31mpid: 23044[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:14:32,027 DEBUG 18576  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "applyId": "必须传入id名",
+        "buildName": "必须传入楼宇名",
+        "leader": "必须传入负责人",
+        "sex": "必须传入性别",
+        "address": "必须传入地址",
+        "telphone": "必须传入手机号"
+    }
+}
+2021-04-08 23:14:39,267 DEBUG 18576  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "applyId": "必须传入id名",
+        "buildName": "必须传入楼宇名",
+        "leader": "必须传入负责人",
+        "sex": "必须传入性别",
+        "address": "必须传入地址",
+        "telphone": "必须传入手机号"
+    }
+}
+2021-04-08 23:14:49,152 DEBUG 18576  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {
+        "applyId": "必须传入id名",
+        "buildName": "必须传入楼宇名",
+        "leader": "必须传入负责人",
+        "sex": "必须传入性别",
+        "address": "必须传入地址",
+        "telphone": "必须传入手机号"
+    }
+}
+[31m2021-04-08 23:14:56,402 ERROR 18576  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: invalid JSON, only supports object and array[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:55:13)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: " "[39m
+[31mpid: 18576[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+[31m2021-04-08 23:15:00,667 ERROR 18576  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: invalid JSON, only supports object and array[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:55:13)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: " "[39m
+[31mpid: 18576[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-08 23:15:14,412 DEBUG 18576  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:15:19,663 DEBUG 18576  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:16:07,299 DEBUG 20656  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-08 23:16:21,456 DEBUG 20656  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 26ms data:{
+    "param": {},
+    "body": {
+        "applyId": "必须传入id名",
+        "buildName": "必须传入楼宇名",
+        "leader": "必须传入负责人",
+        "sex": "必须传入性别",
+        "address": "必须传入地址",
+        "telphone": "必须传入手机号"
+    }
+}
+[31m2021-04-08 23:16:21,458 ERROR 20656  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyId' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyId' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["必须传入楼宇名","必须传入负责人","必须传入性别","必须传入地址","必须传入手机号","必须传入id名","2021-04-08 23:16:21","2021-04-08 23:16:21"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyId' in 'field list'","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["必须传入楼宇名","必须传入负责人","必须传入性别","必须传入地址","必须传入手机号","必须传入id名","2021-04-08 23:16:21","2021-04-08 23:16:21"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`applyId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["必须传入楼宇名","必须传入负责人","必须传入性别","必须传入地址","必须传入手机号","必须传入id名","2021-04-08 23:16:21","2021-04-08 23:16:21"][39m
+[31mpid: 20656[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m

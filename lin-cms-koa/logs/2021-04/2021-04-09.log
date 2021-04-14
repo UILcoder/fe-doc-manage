@@ -1,0 +1,1473 @@
+2021-04-09 07:57:46,782 DEBUG 20656  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617926266756] from: ::ffff:127.0.0.1 costs: 14ms data:{
+    "param": {
+        "_time": "1617926266756"
+    },
+    "body": {}
+}
+2021-04-09 07:57:46,788 DEBUG 20656  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617926266756] from: ::ffff:127.0.0.1 costs: 19ms data:{
+    "param": {
+        "_time": "1617926266756"
+    },
+    "body": {}
+}
+[31m2021-04-09 07:57:46,789 ERROR 20656  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'applyId' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Query.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Query.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyId' in 'field list'","sql":"SELECT `id`, `buildName`, `leader`, `sex`, `address`, `telphone`, `applyId`, `create_time`, `update_time`, `delete_time` FROM `buildList` AS `buildList` WHERE (`buildList`.`delete_time` IS NULL);"}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'applyId' in 'field list'","sql":"SELECT `id`, `buildName`, `leader`, `sex`, `address`, `telphone`, `applyId`, `create_time`, `update_time`, `delete_time` FROM `buildList` AS `buildList` WHERE (`buildList`.`delete_time` IS NULL);"}[39m
+[31msql: "SELECT `id`, `buildName`, `leader`, `sex`, `address`, `telphone`, `applyId`, `create_time`, `update_time`, `delete_time` FROM `buildList` AS `buildList` WHERE (`buildList`.`delete_time` IS NULL);"[39m
+[31mparameters: undefined[39m
+[31mpid: 20656[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-09 07:57:46,796 DEBUG 20656  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617926266756] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617926266756"
+    },
+    "body": {}
+}
+2021-04-09 07:58:39,218 DEBUG 21164  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 11ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-09 07:58:47,798 DEBUG 21164  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617926327771] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617926327771"
+    },
+    "body": {}
+}
+2021-04-09 07:58:47,805 DEBUG 21164  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617926327771] from: ::ffff:127.0.0.1 costs: 16ms data:{
+    "param": {
+        "_time": "1617926327771"
+    },
+    "body": {}
+}
+2021-04-09 07:58:47,813 DEBUG 21164  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617926327771] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617926327771"
+    },
+    "body": {}
+}
+2021-04-09 09:10:54,206 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildList/search?_time=1617930654171] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617930654171"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:10:54,211 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:10:54,224 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617930654170] from: ::ffff:127.0.0.1 costs: 33ms data:{
+    "param": {
+        "_time": "1617930654170"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:10:54,227 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:10:54,234 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617930654171] from: ::ffff:127.0.0.1 costs: 30ms data:{
+    "param": {
+        "_time": "1617930654171"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:10:54,237 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:10:55,405 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617930655398] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617930655398"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:10:55,406 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:10:55,407 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/peopleInfo/search?_time=1617930655398] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617930655398"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:10:55,408 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:26:58,644 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/static/docStatic] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-09 09:27:39,275 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/static/docStatic] from: ::ffff:127.0.0.1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-09 09:29:53,035 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617931793022] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617931793022"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:29:53,036 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:29:53,037 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/peopleInfo/search?_time=1617931793022] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617931793022"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:29:53,039 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:30:25,277 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617931824951] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617931824951"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:30:25,278 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:30:25,280 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/peopleInfo/search?_time=1617931824951] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617931824951"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:30:25,281 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:37:48,525 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617932268211] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617932268211"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:37:48,526 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 09:43:32,647 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617932612639] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617932612639"
+    },
+    "body": {}
+}
+[31m2021-04-09 09:43:32,648 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:11:49,256 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934309236] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617934309236"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:11:49,258 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:11:49,277 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934309236] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617934309236"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:11:49,278 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:11:52,112 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934312103] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617934312103"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:11:52,113 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:11:52,123 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934312103] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617934312103"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:11:52,124 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:12:08,555 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934328546] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617934328546"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:12:08,557 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:12:08,568 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934328546] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617934328546"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:12:08,569 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:13:25,700 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934405683] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617934405683"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:13:25,702 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:13:25,717 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934405683] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617934405683"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:13:25,721 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:13:28,488 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934408477] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617934408477"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:13:28,490 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:13:28,492 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934408478] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617934408478"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:13:28,493 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:19:44,216 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934784204] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617934784204"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:19:44,217 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:19:44,218 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617934784205] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617934784205"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:19:44,219 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:25:13,881 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935113870] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617935113870"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:25:13,883 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:25:15,608 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935115599] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935115599"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:25:15,609 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:25:31,479 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935131468] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617935131468"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:25:31,481 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:25:49,316 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935149306] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617935149306"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:25:49,317 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:25:52,667 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935152658] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935152658"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:25:52,669 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:25:52,682 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935152658] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617935152658"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:25:52,683 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:27:25,071 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935245064] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935245064"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:27:25,072 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:27:28,756 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935248748] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935248748"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:27:28,758 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:27:28,771 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935248748] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935248748"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:27:28,772 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:30:41,088 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935441075] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935441075"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:30:41,089 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:30:41,091 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935441075] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617935441075"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:30:41,092 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:30:41,370 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935441360] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935441360"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:30:41,371 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:30:41,377 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617935441360] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617935441360"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:30:41,378 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:40:03,443 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936003422] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617936003422"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:40:03,444 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:40:03,456 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936003422] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936003422"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:40:03,457 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:47:27,350 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936447334] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936447334"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:47:27,353 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:47:27,669 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936447334] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936447334"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:47:27,671 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:47:29,661 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936449652] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936449652"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:47:29,662 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:47:29,674 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936449652] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617936449652"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:47:29,676 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:49:21,762 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936561751] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617936561751"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:49:21,763 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:49:21,776 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936561751] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617936561751"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:49:21,778 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:50:02,871 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936602859] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936602859"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:50:02,874 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:50:02,887 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936602859] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {
+        "_time": "1617936602859"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:50:02,889 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:51:17,857 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936677844] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936677844"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:51:17,859 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:51:17,861 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936677845] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617936677845"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:51:17,862 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:51:18,775 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936678766] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617936678766"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:51:18,776 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:51:18,786 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936678766] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936678766"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:51:18,787 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:52:08,223 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936728211] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936728211"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:52:08,224 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:52:15,114 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [POST] -> [/doc/repair/submit?_time=1617936735091] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {
+        "_time": "1617936735091"
+    },
+    "body": {}
+}
+2021-04-09 10:52:17,339 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [POST] -> [/doc/repair/submit?_time=1617936737024] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {
+        "_time": "1617936737024"
+    },
+    "body": {}
+}
+2021-04-09 10:54:26,777 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936866761] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617936866761"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:54:26,778 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:54:29,345 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936869336] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617936869336"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:54:29,347 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:56:02,587 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617936962574] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617936962574"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:56:02,589 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:57:12,155 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617937032142] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617937032142"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:57:12,159 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:58:11,646 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617937091635] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617937091635"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:58:11,648 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:58:23,926 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617937103909] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617937103909"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:58:23,927 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m
+2021-04-09 10:59:05,038 DEBUG 14028  --- [DESKTOP-DO8PKDG] - [GET] -> [/doc/buildName/search?_time=1617937145027] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617937145027"
+    },
+    "body": {}
+}
+[31m2021-04-09 10:59:05,040 ERROR 14028  --- [DESKTOP-DO8PKDG] - nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m    at C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19[39m
+[31m    at tryCatcher (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\util.js:16:23)[39m
+[31m    at Promise._settlePromiseFromHandler (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:547:31)[39m
+[31m    at Promise._settlePromise (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:604:18)[39m
+[31m    at Promise._settlePromise0 (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:649:10)[39m
+[31m    at Promise._settlePromises (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\promise.js:725:18)[39m
+[31m    at _drainQueueStep (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:93:12)[39m
+[31m    at _drainQueue (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:86:9)[39m
+[31m    at Async._drainQueues (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:102:5)[39m
+[31m    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\A\Desktop\fe-doc-manage\lin-cms-koa\node_modules\bluebird\js\release\async.js:15:14)[39m
+[31m    at processImmediate (internal/timers.js:461:21)[39m
+[31mname: "SequelizeConnectionRefusedError"[39m
+[31mparent: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31moriginal: {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}[39m
+[31mpid: 14028[39m
+[31mhostname: DESKTOP-DO8PKDG[39m
+[31m[39m

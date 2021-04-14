@@ -1,0 +1,2581 @@
+2021-04-01 14:50:57,705 DEBUG 2980  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 2704170119,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "build": "hfdjfh",
+        "docId": 5
+    }
+}
+2021-04-01 15:13:58,021 DEBUG 6532  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 58ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 2704170119,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "build": "hfdjfh",
+        "docId": 5
+    }
+}
+[31m2021-04-01 15:13:58,029 ERROR 6532  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["王小月","女",2704170119,"fhdfh","bdhf",654684,"hfdjfh",5,"2021-04-01 15:13:57","2021-04-01 15:13:57"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["王小月","女",2704170119,"fhdfh","bdhf",654684,"hfdjfh",5,"2021-04-01 15:13:57","2021-04-01 15:13:57"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王小月","女",2704170119,"fhdfh","bdhf",654684,"hfdjfh",5,"2021-04-01 15:13:57","2021-04-01 15:13:57"][39m
+[31mpid: 6532[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:14:26,403 DEBUG 6532  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 15:15:04,094 DEBUG 6532  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy"
+    }
+}
+2021-04-01 15:15:48,277 DEBUG 6532  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 15ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": "必须传入学号",
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": "必须传入联系电话",
+        "build": "必须传入楼宇",
+        "docId": "必须传入宿舍号"
+    }
+}
+[31m2021-04-01 15:15:48,278 ERROR 6532  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: '必须传入学号' for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '必须传入学号' for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别","必须传入学号","必须传入学院","必须传入班级","必须传入联系电话","必须传入楼宇","必须传入宿舍号","2021-04-01 15:15:48","2021-04-01 15:15:48"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '必须传入学号' for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别","必须传入学号","必须传入学院","必须传入班级","必须传入联系电话","必须传入楼宇","必须传入宿舍号","2021-04-01 15:15:48","2021-04-01 15:15:48"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别","必须传入学号","必须传入学院","必须传入班级","必须传入联系电话","必须传入楼宇","必须传入宿舍号","2021-04-01 15:15:48","2021-04-01 15:15:48"][39m
+[31mpid: 6532[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:16:36,192 DEBUG 6532  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 15ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:16:36,194 ERROR 6532  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:16:36","2021-04-01 15:16:36"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:16:36","2021-04-01 15:16:36"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:16:36","2021-04-01 15:16:36"][39m
+[31mpid: 6532[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:18:02,061 DEBUG 6532  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 13ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:18:02,063 ERROR 6532  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:18:02","2021-04-01 15:18:02"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:18:02","2021-04-01 15:18:02"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:18:02","2021-04-01 15:18:02"][39m
+[31mpid: 6532[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:19:54,462 DEBUG 1276  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+2021-04-01 15:20:35,938 DEBUG 2504  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 39ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:20:35,943 ERROR 2504  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:20:35","2021-04-01 15:20:35"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:20:35","2021-04-01 15:20:35"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:20:35","2021-04-01 15:20:35"][39m
+[31mpid: 2504[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:20:38,616 DEBUG 2504  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:20:38,619 ERROR 2504  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:20:38","2021-04-01 15:20:38"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:20:38","2021-04-01 15:20:38"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:20:38","2021-04-01 15:20:38"][39m
+[31mpid: 2504[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:24:42,709 DEBUG 864  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 22ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:24:42,716 ERROR 864  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:24:42","2021-04-01 15:24:42"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:24:42","2021-04-01 15:24:42"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:24:42","2021-04-01 15:24:42"][39m
+[31mpid: 864[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:24:44,253 DEBUG 864  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:24:44,255 ERROR 864  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Out of range value for column 'studentId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:24:44","2021-04-01 15:24:44"]}[39m
+[31moriginal: {"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'studentId' at row 1","sql":"INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:24:44","2021-04-01 15:24:44"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:24:44","2021-04-01 15:24:44"][39m
+[31mpid: 864[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:30:07,772 DEBUG 11632  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 23ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "必须传入性别",
+        "studentId": 2704170119,
+        "academy": "必须传入学院",
+        "class": "必须传入班级",
+        "telphone": 1234,
+        "build": "必须传入楼宇",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:30:07,778 ERROR 11632  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:30:07","2021-04-01 15:30:07"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:30:07","2021-04-01 15:30:07"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","必须传入性别",2704170119,"必须传入学院","必须传入班级",1234,"必须传入楼宇",1234,"2021-04-01 15:30:07","2021-04-01 15:30:07"][39m
+[31mpid: 11632[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:38:00,792 DEBUG 11632  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 12ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "we",
+        "studentId": 2704170119,
+        "academy": "sd",
+        "class": "ds",
+        "telphone": 1234,
+        "build": "tg",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:38:00,794 ERROR 11632  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","we",2704170119,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:00","2021-04-01 15:38:00"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","we",2704170119,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:00","2021-04-01 15:38:00"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","we",2704170119,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:00","2021-04-01 15:38:00"][39m
+[31mpid: 11632[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:38:08,523 DEBUG 11632  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "we",
+        "studentId": 27041719,
+        "academy": "sd",
+        "class": "ds",
+        "telphone": 1234,
+        "build": "tg",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:38:08,525 ERROR 11632  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","we",27041719,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:08","2021-04-01 15:38:08"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","we",27041719,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:08","2021-04-01 15:38:08"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","we",27041719,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:08","2021-04-01 15:38:08"][39m
+[31mpid: 11632[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:38:14,063 DEBUG 11632  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {
+        "name": "wxy",
+        "sex": "we",
+        "studentId": 27019,
+        "academy": "sd",
+        "class": "ds",
+        "telphone": 1234,
+        "build": "tg",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:38:14,065 ERROR 11632  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","we",27019,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:14","2021-04-01 15:38:14"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["wxy","we",27019,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:14","2021-04-01 15:38:14"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["wxy","we",27019,"sd","ds",1234,"tg",1234,"2021-04-01 15:38:14","2021-04-01 15:38:14"][39m
+[31mpid: 11632[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 15:39:26,656 DEBUG 11632  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 15:39:26,659 ERROR 11632  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 15:39:26","2021-04-01 15:39:26"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 15:39:26","2021-04-01 15:39:26"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 15:39:26","2021-04-01 15:39:26"][39m
+[31mpid: 11632[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:37:31,371 DEBUG 5608  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 41ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:37:31,375 ERROR 5608  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:37:31","2021-04-01 16:37:31"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:37:31","2021-04-01 16:37:31"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:37:31","2021-04-01 16:37:31"][39m
+[31mpid: 5608[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:37:32,624 DEBUG 5608  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:37:32,626 ERROR 5608  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:37:32","2021-04-01 16:37:32"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:37:32","2021-04-01 16:37:32"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:37:32","2021-04-01 16:37:32"][39m
+[31mpid: 5608[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:39:57,840 DEBUG 14796  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 25ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:39:57,845 ERROR 14796  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:57","2021-04-01 16:39:57"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:57","2021-04-01 16:39:57"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:57","2021-04-01 16:39:57"][39m
+[31mpid: 14796[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:39:58,820 DEBUG 14796  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:39:58,822 ERROR 14796  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:58","2021-04-01 16:39:58"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:58","2021-04-01 16:39:58"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:58","2021-04-01 16:39:58"][39m
+[31mpid: 14796[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:39:59,781 DEBUG 14796  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:39:59,783 ERROR 14796  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:59","2021-04-01 16:39:59"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:59","2021-04-01 16:39:59"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:39:59","2021-04-01 16:39:59"][39m
+[31mpid: 14796[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:40:00,877 DEBUG 14796  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:40:00,879 ERROR 14796  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:40:00","2021-04-01 16:40:00"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:40:00","2021-04-01 16:40:00"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:40:00","2021-04-01 16:40:00"][39m
+[31mpid: 14796[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:40:01,675 DEBUG 14796  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "build": "德馨#1",
+        "docId": 1234
+    }
+}
+[31m2021-04-01 16:40:01,677 ERROR 14796  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'id' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:40:01","2021-04-01 16:40:01"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'id' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);","parameters":["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:40:01","2021-04-01 16:40:01"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`name`,`sex`,`studentId`,`academy`,`class`,`telphone`,`build`,`docId`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["王晓悦","女",27019,"信息与网络工程","物联网171",1234,"德馨#1",1234,"2021-04-01 16:40:01","2021-04-01 16:40:01"][39m
+[31mpid: 14796[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 16:43:37,078 DEBUG 9552  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 1234
+    }
+}
+2021-04-01 16:44:47,497 DEBUG 12916  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 60ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 1234
+    }
+}
+2021-04-01 16:44:54,071 DEBUG 12916  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 42ms data:{
+    "param": {},
+    "body": {
+        "name": "王晓悦",
+        "sex": "女",
+        "studentId": 27019,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 1234
+    }
+}
+2021-04-01 16:45:51,329 DEBUG 12916  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 43ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "女",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 1234
+    }
+}
+2021-04-01 17:06:04,856 DEBUG 14872  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 17:07:23,015 DEBUG 14872  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 25ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+[31m2021-04-01 17:07:23,017 ERROR 14872  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'leader' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'leader' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","2021-04-01 17:07:22","2021-04-01 17:07:22"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'leader' in 'field list'","sql":"INSERT INTO `peopleInfo` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","2021-04-01 17:07:22","2021-04-01 17:07:22"]}[39m
+[31msql: "INSERT INTO `peopleInfo` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","男","安徽省蚌埠市龙子湖","1536252489","2021-04-01 17:07:22","2021-04-01 17:07:22"][39m
+[31mpid: 14872[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 17:19:23,508 DEBUG 2640  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add] from: ::1 costs: 36ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "sex": "男",
+        "address": "安徽省蚌埠市龙子湖",
+        "telphone": "1536252489"
+    }
+}
+2021-04-01 17:45:39,314 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 17:56:24,001 DEBUG 14728  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 34ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "必须传入宿舍成员"
+    }
+}
+2021-04-01 17:56:51,395 DEBUG 14728  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 42ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "必须传入宿舍成员"
+    }
+}
+2021-04-01 18:00:43,402 DEBUG 7304  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 50ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "必须传入宿舍成员"
+    }
+}
+2021-04-01 18:01:57,020 DEBUG 7304  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 45ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "张华,小红"
+    }
+}
+2021-04-01 18:04:13,347 DEBUG 2044  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 59ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "张华"
+    }
+}
+2021-04-01 18:06:54,626 DEBUG 10428  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 29ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "张华"
+    }
+}
+[31m2021-04-01 18:06:54,630 ERROR 10428  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: '张华' for column 'docMember' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","209","刘丽","张华","2021-04-01 18:06:54","2021-04-01 18:06:54"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","209","刘丽","张华","2021-04-01 18:06:54","2021-04-01 18:06:54"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","209","刘丽","张华","2021-04-01 18:06:54","2021-04-01 18:06:54"][39m
+[31mpid: 10428[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:08:13,854 DEBUG 3256  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 23ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": "209",
+        "docLeader": "刘丽",
+        "docMember": "张华"
+    }
+}
+[31m2021-04-01 18:08:13,858 ERROR 3256  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: '张华' for column 'docMember' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","209","刘丽","张华","2021-04-01 18:08:13","2021-04-01 18:08:13"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三","209","刘丽","张华","2021-04-01 18:08:13","2021-04-01 18:08:13"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三","209","刘丽","张华","2021-04-01 18:08:13","2021-04-01 18:08:13"][39m
+[31mpid: 3256[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:08:25,511 DEBUG 3256  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 10ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMember": "张华"
+    }
+}
+[31m2021-04-01 18:08:25,513 ERROR 3256  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: '张华' for column 'docMember' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","张华","2021-04-01 18:08:25","2021-04-01 18:08:25"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","张华","2021-04-01 18:08:25","2021-04-01 18:08:25"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","张华","2021-04-01 18:08:25","2021-04-01 18:08:25"][39m
+[31mpid: 3256[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:08:36,473 DEBUG 3256  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 16ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMember": "张华"
+    }
+}
+[31m2021-04-01 18:08:36,475 ERROR 3256  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: '张华' for column 'docMember' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","张华","2021-04-01 18:08:36","2021-04-01 18:08:36"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '张华' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","张华","2021-04-01 18:08:36","2021-04-01 18:08:36"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","张华","2021-04-01 18:08:36","2021-04-01 18:08:36"][39m
+[31mpid: 3256[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:09:47,173 DEBUG 3256  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 39ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMember": 123
+    }
+}
+2021-04-01 18:13:11,979 DEBUG 3056  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 34ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMember": "zhang"
+    }
+}
+[31m2021-04-01 18:13:11,982 ERROR 3056  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: 'zhang' for column 'docMember' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'zhang' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:13:11","2021-04-01 18:13:11"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'zhang' for column 'docMember' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:13:11","2021-04-01 18:13:11"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMember`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:13:11","2021-04-01 18:13:11"][39m
+[31mpid: 3056[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:15:39,229 DEBUG 13560  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMember": "zhang"
+    }
+}
+2021-04-01 18:15:49,882 DEBUG 13560  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 31ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:15:49,885 ERROR 13560  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'docMembers' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:15:49","2021-04-01 18:15:49"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:15:49","2021-04-01 18:15:49"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:15:49","2021-04-01 18:15:49"][39m
+[31mpid: 13560[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:17:56,303 DEBUG 14928  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 20ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:17:56,308 ERROR 14928  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'docMembers' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:56","2021-04-01 18:17:56"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:56","2021-04-01 18:17:56"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:56","2021-04-01 18:17:56"][39m
+[31mpid: 14928[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:17:57,321 DEBUG 14928  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:17:57,323 ERROR 14928  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'docMembers' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:57","2021-04-01 18:17:57"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:57","2021-04-01 18:17:57"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:57","2021-04-01 18:17:57"][39m
+[31mpid: 14928[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:17:58,006 DEBUG 14928  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:17:58,008 ERROR 14928  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'docMembers' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:57","2021-04-01 18:17:57"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:57","2021-04-01 18:17:57"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:17:57","2021-04-01 18:17:57"][39m
+[31mpid: 14928[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:18:10,546 DEBUG 14928  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 13ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:18:10,547 ERROR 14928  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'docMembers' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:10","2021-04-01 18:18:10"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:10","2021-04-01 18:18:10"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:10","2021-04-01 18:18:10"][39m
+[31mpid: 14928[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:18:12,256 DEBUG 14928  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:18:12,258 ERROR 14928  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Unknown column 'docMembers' in 'field list'[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:12","2021-04-01 18:18:12"]}[39m
+[31moriginal: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'docMembers' in 'field list'","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:12","2021-04-01 18:18:12"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:12","2021-04-01 18:18:12"][39m
+[31mpid: 14928[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:18:42,836 DEBUG 14928  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 13ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:18:42,838 ERROR 14928  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Table 'lin-cms.doclist' doesn't exist[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at handler (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Prepare.onResult (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:612:11)[39m
+[31m    at Prepare.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lin-cms.doclist' doesn't exist","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:42","2021-04-01 18:18:42"]}[39m
+[31moriginal: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'lin-cms.doclist' doesn't exist","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:42","2021-04-01 18:18:42"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","张三",209,"刘丽","zhang","2021-04-01 18:18:42","2021-04-01 18:18:42"][39m
+[31mpid: 14928[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:19:29,610 DEBUG 13656  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 58ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+2021-04-01 18:20:58,656 DEBUG 10192  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang"
+    }
+}
+[31m2021-04-01 18:20:58,668 ERROR 10192  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: val.join is not a function[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:40:45)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3657:32)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3638:18)[39m
+[31m    at DocList._initValues (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:173:10)[39m
+[31m    at new Model (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:118:10)[39m
+[31m    at new docList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:6:1)[39m
+[31m    at Function.build (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2171:12)[39m
+[31m    at Function.create (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2224:17)[39m
+[31m    at Function.addDoc (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/docList.js:5:26)[39m
+[31m    at Function.addDocList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:18:22)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/docList.js:11:25[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 10192[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:21:18,200 DEBUG 10192  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "zhang rgg"
+    }
+}
+[31m2021-04-01 18:21:18,204 ERROR 10192  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: val.join is not a function[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:40:45)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3657:32)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3638:18)[39m
+[31m    at DocList._initValues (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:173:10)[39m
+[31m    at new Model (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:118:10)[39m
+[31m    at new docList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:6:1)[39m
+[31m    at Function.build (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2171:12)[39m
+[31m    at Function.create (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2224:17)[39m
+[31m    at Function.addDoc (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/docList.js:5:26)[39m
+[31m    at Function.addDocList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:18:22)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/docList.js:11:25[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 10192[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 18:21:54,700 DEBUG 10192  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 53ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": [
+            "长",
+            "嘀咕嘀咕"
+        ]
+    }
+}
+2021-04-01 18:43:22,986 DEBUG 11588  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/repair/submit] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 18:44:35,175 DEBUG 11588  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/repair/submit] from: ::1 costs: 71ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "dateTime": "2021-3-1",
+        "buildName": "德馨#1",
+        "docId": 809,
+        "telphone": 12345678,
+        "detail": "必须传入问题描述"
+    }
+}
+2021-04-01 21:06:03,248 DEBUG 16072  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 46ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:06:03,258 ERROR 16072  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: Cannot read property 'localeCompare' of undefined[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:32:37)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at Function.getBuildList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:32:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/buildList.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 16072[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:13:05,755 DEBUG 9744  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:13:05,763 ERROR 9744  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: Cannot read property 'localeCompare' of undefined[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:32:37)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at Function.getBuildList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:32:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/buildList.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 9744[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:13:57,744 DEBUG 660  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:16:13,743 DEBUG 16804  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 13ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:17:12,633 DEBUG 3340  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 11ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:17:13,668 DEBUG 3340  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:17:59,879 DEBUG 15152  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 11ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:22:56,802 DEBUG 14012  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search] from: ::1 costs: 45ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:31:33,114 DEBUG 8040  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 2704170119,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "build": "hfdjfh",
+        "docId": 5
+    }
+}
+2021-04-01 21:31:50,836 DEBUG 8040  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 16ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:32:49,153 DEBUG 8040  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/save] from: ::1 costs: 55ms data:{
+    "param": {},
+    "body": {
+        "name": "王小月",
+        "sex": "女",
+        "studentId": 27010,
+        "academy": "fhdfh",
+        "class": "bdhf",
+        "telphone": 654684,
+        "buildName": "hfdjfh",
+        "docId": 5
+    }
+}
+2021-04-01 21:32:53,395 DEBUG 8040  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:33:33,452 DEBUG 13708  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:33:33,469 ERROR 13708  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: a.localeCompare is not a function[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:24)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at getData (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:7)[39m
+[31m    at Function.getPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:42:12)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 13708[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:34:31,420 DEBUG 16408  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:34:31,437 ERROR 16408  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: Cannot read property 'localeCompare' of undefined[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:34)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at getData (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:7)[39m
+[31m    at Function.getPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:42:12)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 16408[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:35:02,668 DEBUG 12448  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:39:20,972 DEBUG 2916  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:39:20,989 ERROR 2916  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: Cannot read property 'localeCompare' of undefined[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:34)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at getData (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:7)[39m
+[31m    at Function.getBuildList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:30:12)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/buildList.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 2916[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:41:47,147 DEBUG 17248  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:41:47,160 ERROR 17248  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: Cannot read property 'localeCompare' of undefined[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:28)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at getData (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:7)[39m
+[31m    at Function.getBuildList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:30:12)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/buildList.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 17248[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:42:45,898 DEBUG 14728  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 21:42:45,912 ERROR 14728  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: a.localeCompare is not a function[39m
+[31m    at sort (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:24)[39m
+[31m    at Array.sort (<anonymous>)[39m
+[31m    at getData (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:49:7)[39m
+[31m    at Function.getBuildList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:30:12)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/buildList.js:19:16[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 14728[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 21:43:41,624 DEBUG 14512  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 21:43:47,995 DEBUG 14512  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:16:28,012 DEBUG 13508  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/27010] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:17:54,680 DEBUG 4292  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:18:02,163 DEBUG 4292  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/27010] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:18:15,563 DEBUG 4292  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 13ms data:{
+    "param": {},
+    "body": {}
+}
+[31m2021-04-01 22:18:15,570 ERROR 4292  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: Class constructor NotFound cannot be invoked without 'new'[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:17:13)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 4292[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 22:20:30,341 DEBUG 12596  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:22:29,504 DEBUG 14924  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:22:35,086 DEBUG 14924  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:22:41,487 DEBUG 14924  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/27018] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:24:25,935 DEBUG 13568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:24:32,377 DEBUG 13568  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:25:07,252 DEBUG 13564  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:27:07,720 DEBUG 13564  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:47:14,600 DEBUG 1804  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:47:15,720 DEBUG 1804  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:47:16,372 DEBUG 1804  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:47:17,025 DEBUG 1804  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:47:17,674 DEBUG 1804  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:47:18,439 DEBUG 1804  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:52:19,819 DEBUG 15428  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:56:21,633 DEBUG 15428  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 22:56:26,599 DEBUG 15428  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:40,778 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:41,965 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:42,659 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:43,251 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:43,771 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:44,284 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:53,700 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/fj] from: ::1 costs: 1ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:58:59,990 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/1] from: ::1 costs: 19ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 22:59:10,034 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 32ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 23:01:48,327 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/2] from: ::1 costs: 39ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:01:54,381 DEBUG 16796  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/10] from: ::1 costs: 30ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:05:46,742 DEBUG 17228  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:05:46,753 ERROR 17228  --- [LAPTOP-UCE87BE9] - nodejs.ReferenceError: get is not defined[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:27:14[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 17228[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:05:47,839 DEBUG 17228  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:05:47,841 ERROR 17228  --- [LAPTOP-UCE87BE9] - nodejs.ReferenceError: get is not defined[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:27:14[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 17228[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:10:03,722 DEBUG 16408  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:10:05,066 DEBUG 16408  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:10:16,068 DEBUG 16408  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/1] from: ::1 costs: 15ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:21:57,019 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 9ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:21:58,494 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:21:59,337 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:22:00,262 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:22:00,798 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:22:01,108 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:22:02,337 DEBUG 14948  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:22:54,079 DEBUG 2156  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:22:54,088 ERROR 2156  --- [LAPTOP-UCE87BE9] - nodejs.Error: The argument passed to findOne must be an options object, use findByPk if you wish to pass a single primary key value[39m
+[31m    at Function.findOne (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:1909:13)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:16:37)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:25)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:25[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 2156[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:25:56,958 DEBUG 17380  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:25:56,966 ERROR 17380  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: people.update is not a function[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:25)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 17380[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:25:58,014 DEBUG 17380  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:25:58,015 ERROR 17380  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: people.update is not a function[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:25)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 17380[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:25:58,775 DEBUG 17380  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:25:58,777 ERROR 17380  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: people.update is not a function[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:25)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 17380[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:26:29,620 DEBUG 15016  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 13ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:26:29,622 ERROR 15016  --- [LAPTOP-UCE87BE9] - nodejs.AssertionError: Missing where attribute in the options parameter[39m
+[31m    at Function._optionsMustContainWhere (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3431:5)[39m
+[31m    at Function.update (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3057:10)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:29)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31mgeneratedMessage: false[39m
+[31mcode: "ERR_ASSERTION"[39m
+[31mactual: undefined[39m
+[31mexpected: true[39m
+[31moperator: "=="[39m
+[31mpid: 15016[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:27:08,728 DEBUG 10520  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 12ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:27:08,730 ERROR 10520  --- [LAPTOP-UCE87BE9] - nodejs.AssertionError: Missing where attribute in the options parameter[39m
+[31m    at Function._optionsMustContainWhere (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3431:5)[39m
+[31m    at Function.update (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3057:10)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:29)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31mgeneratedMessage: false[39m
+[31mcode: "ERR_ASSERTION"[39m
+[31mactual: undefined[39m
+[31mexpected: true[39m
+[31moperator: "=="[39m
+[31mpid: 10520[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:27:09,945 DEBUG 10520  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:27:09,946 ERROR 10520  --- [LAPTOP-UCE87BE9] - nodejs.AssertionError: Missing where attribute in the options parameter[39m
+[31m    at Function._optionsMustContainWhere (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3431:5)[39m
+[31m    at Function.update (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3057:10)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:29)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31mgeneratedMessage: false[39m
+[31mcode: "ERR_ASSERTION"[39m
+[31mactual: undefined[39m
+[31mexpected: true[39m
+[31moperator: "=="[39m
+[31mpid: 10520[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:29:35,034 DEBUG 13552  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:30:40,088 DEBUG 16340  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:31:00,524 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27018] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {
+        "name": "李四",
+        "sex": "男",
+        "studentId": 27018,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:31:12,862 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 23:31:43,760 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:31:48,557 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 23:32:03,822 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:32:09,022 DEBUG 14292  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/peopleInfo/search] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-01 23:33:07,402 DEBUG 12644  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:33:23,619 DEBUG 15708  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:33:23,625 ERROR 15708  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: people.update is not a function[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:24:25)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 15708[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:36:57,260 DEBUG 13492  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:36:58,643 DEBUG 13492  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:37:06,113 DEBUG 13492  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/2] from: ::1 costs: 43ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:37:52,180 DEBUG 16112  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/2] from: ::1 costs: 42ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:37:52,182 ERROR 16112  --- [LAPTOP-UCE87BE9] - nodejs.AssertionError: Missing where attribute in the options parameter[39m
+[31m    at Function._optionsMustContainWhere (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3431:5)[39m
+[31m    at Function.update (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3057:10)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:20:29)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31mgeneratedMessage: false[39m
+[31mcode: "ERR_ASSERTION"[39m
+[31mactual: undefined[39m
+[31mexpected: true[39m
+[31moperator: "=="[39m
+[31mpid: 16112[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:37:53,770 DEBUG 16112  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/2] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+[31m2021-04-01 23:37:53,771 ERROR 16112  --- [LAPTOP-UCE87BE9] - nodejs.AssertionError: Missing where attribute in the options parameter[39m
+[31m    at Function._optionsMustContainWhere (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3431:5)[39m
+[31m    at Function.update (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3057:10)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/peopleInfo.js:20:29)[39m
+[31m    at Function.editPeopleInfo (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:47:5)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/peopleInfo.js:28:3[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31mgeneratedMessage: false[39m
+[31mcode: "ERR_ASSERTION"[39m
+[31mactual: undefined[39m
+[31mexpected: true[39m
+[31moperator: "=="[39m
+[31mpid: 16112[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-01 23:38:29,236 DEBUG 16112  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:41:12,863 DEBUG 360  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 6ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:41:13,863 DEBUG 360  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 5ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:41:20,476 DEBUG 360  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 2ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:41:21,307 DEBUG 360  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:42:54,908 DEBUG 15856  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 7ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:42:59,566 DEBUG 15856  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:43:51,766 DEBUG 12552  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 3ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:44:48,419 DEBUG 12552  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 4ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}
+2021-04-01 23:46:23,861 DEBUG 13520  --- [LAPTOP-UCE87BE9] - [PUT] -> [/doc/peopleInfo/27010] from: ::1 costs: 8ms data:{
+    "param": {},
+    "body": {
+        "name": "张三",
+        "sex": "男",
+        "studentId": 27010,
+        "academy": "信息与网络工程",
+        "class": "物联网171",
+        "telphone": 1234,
+        "buildName": "德馨#1",
+        "docId": 903
+    }
+}

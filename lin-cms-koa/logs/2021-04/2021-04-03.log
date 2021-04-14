@@ -1,0 +1,1140 @@
+2021-04-03 13:42:46,157 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617428562505] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617428562505"
+    },
+    "body": {}
+}
+2021-04-03 13:43:05,543 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617428585531] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617428585531"
+    },
+    "body": {}
+}
+2021-04-03 13:49:28,627 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617428968611] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617428968611"
+    },
+    "body": {}
+}
+2021-04-03 13:49:28,629 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617428968611] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617428968611"
+    },
+    "body": {}
+}
+2021-04-03 13:49:28,940 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617428968611] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617428968611"
+    },
+    "body": {}
+}
+2021-04-03 13:49:31,768 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617428971752] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617428971752"
+    },
+    "body": {}
+}
+2021-04-03 13:49:31,770 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617428971752] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617428971752"
+    },
+    "body": {}
+}
+2021-04-03 13:49:31,784 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617428971752] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617428971752"
+    },
+    "body": {}
+}
+2021-04-03 13:49:56,794 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617428996725] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617428996725"
+    },
+    "body": {
+        "docId": "2365",
+        "docLeader": "fdgfds",
+        "leader": "fdsg",
+        "docMembers": "sd,effwe,ewfwf",
+        "buildName": "德馨#2"
+    }
+}
+[31m2021-04-03 13:49:56,818 ERROR 22348  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: val.join is not a function[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:40:45)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3657:32)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3638:18)[39m
+[31m    at DocList._initValues (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:173:10)[39m
+[31m    at new Model (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:118:10)[39m
+[31m    at new docList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:6:1)[39m
+[31m    at Function.build (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2171:12)[39m
+[31m    at Function.create (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2224:17)[39m
+[31m    at Function.addDoc (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/docList.js:5:26)[39m
+[31m    at Function.addDocList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:20:22)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/docList.js:11:25[39m
+[31m    at runMicrotasks (<anonymous>)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 22348[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-03 13:50:24,811 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 54ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": [
+            "长",
+            "嘀咕嘀咕"
+        ]
+    }
+}
+[31m2021-04-03 13:50:38,108 ERROR 22348  --- [LAPTOP-UCE87BE9] - nodejs.SyntaxError: Unexpected token } in JSON at position 123[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:57:17)[39m
+[31m    at AsyncFunction.module.exports [as json] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\co-body\lib\json.js:41:20)[39m
+[31m    at runMicrotasks (<anonymous>)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at parseBody (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:100:14)[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:85:19)[39m
+[31mstatus: 400[39m
+[31mbody: "{\r\n    \"buildName\": \"德馨#1\",\r\n    \"leader\": \"张三\",\r\n    \"docId\": 209,\r\n    \"docLeader\": \"刘丽\",\r\n    \"docMembers\": \"长\",\"嘀咕嘀咕\"\r\n}"[39m
+[31mpid: 22348[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-03 13:51:12,536 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add] from: ::1 costs: 0ms data:{
+    "param": {},
+    "body": {
+        "buildName": "德馨#1",
+        "leader": "张三",
+        "docId": 209,
+        "docLeader": "刘丽",
+        "docMembers": "长"
+    }
+}
+[31m2021-04-03 13:51:12,538 ERROR 22348  --- [LAPTOP-UCE87BE9] - nodejs.TypeError: val.join is not a function[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:40:45)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3657:32)[39m
+[31m    at DocList.set (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:3638:18)[39m
+[31m    at DocList._initValues (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:173:10)[39m
+[31m    at new Model (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:118:10)[39m
+[31m    at new docList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\models\/docList.js:6:1)[39m
+[31m    at Function.build (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2171:12)[39m
+[31m    at Function.create (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\model.js:2224:17)[39m
+[31m    at Function.addDoc (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\dao\/docList.js:5:26)[39m
+[31m    at Function.addDocList (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\services\/Content.js:20:22)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\app\api\v1\/docList.js:11:25[39m
+[31m    at runMicrotasks (<anonymous>)[39m
+[31m    at processTicksAndRejections (internal/process/task_queues.js:93:5)[39m
+[31m    at exports.log (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\lin-mizar\lin\middleware\log.js:14:9)[39m
+[31m    at F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-mount\index.js:52:26[39m
+[31m    at bodyParser (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\koa-bodyparser\index.js:95:5)[39m
+[31m[39m
+[31mpid: 22348[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-03 13:52:19,731 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429139713] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617429139713"
+    },
+    "body": {}
+}
+2021-04-03 13:52:38,172 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617429158121] from: ::ffff:127.0.0.1 costs: 40ms data:{
+    "param": {
+        "_time": "1617429158121"
+    },
+    "body": {
+        "docId": "52",
+        "docLeader": "vn",
+        "leader": "xvb",
+        "docMembers": [
+            "df",
+            "dsfgh",
+            "sdg"
+        ],
+        "buildName": "德馨#5"
+    }
+}
+2021-04-03 13:56:52,804 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429412793] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617429412793"
+    },
+    "body": {}
+}
+2021-04-03 13:57:06,244 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617429426192] from: ::ffff:127.0.0.1 costs: 46ms data:{
+    "param": {
+        "_time": "1617429426192"
+    },
+    "body": {
+        "docId": "dsfg",
+        "docLeader": "sdf",
+        "leader": "sadsf",
+        "docMembers": [
+            "as",
+            "as",
+            "asfg"
+        ],
+        "buildName": "德馨#5"
+    }
+}
+[31m2021-04-03 13:57:06,245 ERROR 22348  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: 'dsfg' for column 'docId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'dsfg' for column 'docId' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#5","sadsf","dsfg","sdf","as;as;asfg","2021-04-03 13:57:06","2021-04-03 13:57:06"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'dsfg' for column 'docId' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#5","sadsf","dsfg","sdf","as;as;asfg","2021-04-03 13:57:06","2021-04-03 13:57:06"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#5","sadsf","dsfg","sdf","as;as;asfg","2021-04-03 13:57:06","2021-04-03 13:57:06"][39m
+[31mpid: 22348[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-03 13:57:59,759 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429479737] from: ::ffff:127.0.0.1 costs: 11ms data:{
+    "param": {
+        "_time": "1617429479737"
+    },
+    "body": {}
+}
+2021-04-03 13:57:59,762 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429479737] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617429479737"
+    },
+    "body": {}
+}
+2021-04-03 13:57:59,776 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429479737] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617429479737"
+    },
+    "body": {}
+}
+2021-04-03 13:58:10,399 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617429490354] from: ::ffff:127.0.0.1 costs: 38ms data:{
+    "param": {
+        "_time": "1617429490354"
+    },
+    "body": {
+        "docId": "252",
+        "docLeader": "dsfc",
+        "leader": "sdefrg",
+        "docMembers": [
+            "asdf",
+            "wesf",
+            "awert"
+        ],
+        "buildName": "德馨#4"
+    }
+}
+2021-04-03 13:59:13,670 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429553651] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617429553651"
+    },
+    "body": {}
+}
+2021-04-03 13:59:31,720 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617429571674] from: ::ffff:127.0.0.1 costs: 39ms data:{
+    "param": {
+        "_time": "1617429571674"
+    },
+    "body": {
+        "docId": "69",
+        "docLeader": "weff",
+        "leader": "wasef",
+        "docMembers": [
+            "wer",
+            "ewrt",
+            "qewre"
+        ],
+        "buildName": "德馨#5"
+    }
+}
+2021-04-03 13:59:31,994 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429571674] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617429571674"
+    },
+    "body": {}
+}
+2021-04-03 14:00:59,435 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429659104] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617429659104"
+    },
+    "body": {}
+}
+2021-04-03 14:01:02,760 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429662752] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617429662752"
+    },
+    "body": {}
+}
+2021-04-03 14:01:10,689 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429670368] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617429670368"
+    },
+    "body": {}
+}
+2021-04-03 14:01:34,482 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429694453] from: ::ffff:127.0.0.1 costs: 16ms data:{
+    "param": {
+        "_time": "1617429694453"
+    },
+    "body": {}
+}
+2021-04-03 14:01:34,486 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429694453] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617429694453"
+    },
+    "body": {}
+}
+2021-04-03 14:01:34,498 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429694453] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617429694453"
+    },
+    "body": {}
+}
+2021-04-03 14:01:39,503 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429699464] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617429699464"
+    },
+    "body": {}
+}
+2021-04-03 14:02:24,268 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429744250] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617429744250"
+    },
+    "body": {}
+}
+2021-04-03 14:02:24,272 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429744250] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617429744250"
+    },
+    "body": {}
+}
+2021-04-03 14:02:24,286 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429744250] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617429744250"
+    },
+    "body": {}
+}
+2021-04-03 14:02:25,027 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429745009] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617429745009"
+    },
+    "body": {}
+}
+2021-04-03 14:02:25,029 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429745009] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617429745009"
+    },
+    "body": {}
+}
+2021-04-03 14:02:25,038 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429745009] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617429745009"
+    },
+    "body": {}
+}
+2021-04-03 14:03:45,812 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429825767] from: ::ffff:127.0.0.1 costs: 15ms data:{
+    "param": {
+        "_time": "1617429825767"
+    },
+    "body": {}
+}
+2021-04-03 14:03:45,815 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429825767] from: ::ffff:127.0.0.1 costs: 14ms data:{
+    "param": {
+        "_time": "1617429825767"
+    },
+    "body": {}
+}
+2021-04-03 14:03:45,829 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429825767] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617429825767"
+    },
+    "body": {}
+}
+2021-04-03 14:03:52,945 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429832935] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617429832935"
+    },
+    "body": {}
+}
+2021-04-03 14:04:10,036 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429850015] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617429850015"
+    },
+    "body": {}
+}
+2021-04-03 14:04:10,038 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617429850015] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617429850015"
+    },
+    "body": {
+        "docId": "reth",
+        "docLeader": "wergt",
+        "leader": "wer",
+        "docMembers": [
+            "wert",
+            "wert",
+            "wqder",
+            "wder"
+        ],
+        "buildName": "德馨#1"
+    }
+}
+[31m2021-04-03 14:04:10,039 ERROR 22348  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: 'reth' for column 'docId' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'reth' for column 'docId' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","wer","reth","wergt","wert;wert;wqder;wder","2021-04-03 14:04:10","2021-04-03 14:04:10"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'reth' for column 'docId' at row 1","sql":"INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#1","wer","reth","wergt","wert;wert;wqder;wder","2021-04-03 14:04:10","2021-04-03 14:04:10"]}[39m
+[31msql: "INSERT INTO `docList` (`id`,`buildName`,`leader`,`docId`,`docLeader`,`docMembers`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#1","wer","reth","wergt","wert;wert;wqder;wder","2021-04-03 14:04:10","2021-04-03 14:04:10"][39m
+[31mpid: 22348[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-03 14:04:45,451 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429885427] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617429885427"
+    },
+    "body": {}
+}
+2021-04-03 14:04:45,454 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429885427] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617429885427"
+    },
+    "body": {}
+}
+2021-04-03 14:04:45,466 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429885427] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617429885427"
+    },
+    "body": {}
+}
+2021-04-03 14:04:59,500 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429899478] from: ::ffff:127.0.0.1 costs: 9ms data:{
+    "param": {
+        "_time": "1617429899478"
+    },
+    "body": {}
+}
+2021-04-03 14:04:59,531 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617429899478] from: ::ffff:127.0.0.1 costs: 43ms data:{
+    "param": {
+        "_time": "1617429899478"
+    },
+    "body": {
+        "docId": "52",
+        "docLeader": "sad",
+        "leader": "asdf",
+        "docMembers": [
+            "asdf",
+            "sAD",
+            "asd",
+            "SA"
+        ],
+        "buildName": "德馨#4"
+    }
+}
+2021-04-03 14:05:14,445 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429914394] from: ::ffff:127.0.0.1 costs: 38ms data:{
+    "param": {
+        "_time": "1617429914394"
+    },
+    "body": {}
+}
+2021-04-03 14:05:14,448 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617429914394] from: ::ffff:127.0.0.1 costs: 42ms data:{
+    "param": {
+        "_time": "1617429914394"
+    },
+    "body": {}
+}
+2021-04-03 14:05:14,456 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617429914394] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617429914394"
+    },
+    "body": {}
+}
+2021-04-03 14:06:49,126 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/docList/add?_time=1617430009101] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617430009101"
+    },
+    "body": {
+        "docId": "252",
+        "docLeader": "sad",
+        "leader": "ads",
+        "docMembers": [
+            "as",
+            "dfegr",
+            "d",
+            "edf"
+        ],
+        "buildName": "德馨#1"
+    }
+}
+2021-04-03 14:06:49,425 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430009101] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617430009101"
+    },
+    "body": {}
+}
+2021-04-03 14:08:48,985 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430128963] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617430128963"
+    },
+    "body": {}
+}
+2021-04-03 14:08:48,987 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430128963] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617430128963"
+    },
+    "body": {}
+}
+2021-04-03 14:08:49,017 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430128963] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617430128963"
+    },
+    "body": {}
+}
+2021-04-03 14:09:58,488 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430198456] from: ::ffff:127.0.0.1 costs: 14ms data:{
+    "param": {
+        "_time": "1617430198456"
+    },
+    "body": {}
+}
+2021-04-03 14:09:58,491 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430198456] from: ::ffff:127.0.0.1 costs: 14ms data:{
+    "param": {
+        "_time": "1617430198456"
+    },
+    "body": {}
+}
+2021-04-03 14:09:58,503 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430198456] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617430198456"
+    },
+    "body": {}
+}
+2021-04-03 14:10:26,204 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430226177] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617430226177"
+    },
+    "body": {}
+}
+2021-04-03 14:10:26,207 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430226177] from: ::ffff:127.0.0.1 costs: 14ms data:{
+    "param": {
+        "_time": "1617430226177"
+    },
+    "body": {}
+}
+2021-04-03 14:10:26,216 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430226177] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617430226177"
+    },
+    "body": {}
+}
+2021-04-03 14:13:18,316 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430398289] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617430398289"
+    },
+    "body": {}
+}
+2021-04-03 14:13:18,319 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430398289] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617430398289"
+    },
+    "body": {}
+}
+2021-04-03 14:13:18,326 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430398289] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617430398289"
+    },
+    "body": {}
+}
+2021-04-03 14:14:56,315 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430496286] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617430496286"
+    },
+    "body": {}
+}
+2021-04-03 14:14:56,318 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430496286] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617430496286"
+    },
+    "body": {}
+}
+2021-04-03 14:14:56,328 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430496286] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617430496286"
+    },
+    "body": {}
+}
+2021-04-03 14:15:41,072 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430541047] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617430541047"
+    },
+    "body": {}
+}
+2021-04-03 14:15:41,075 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430541047] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617430541047"
+    },
+    "body": {}
+}
+2021-04-03 14:15:51,765 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430551750] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617430551750"
+    },
+    "body": {}
+}
+2021-04-03 14:15:52,066 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430551750] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617430551750"
+    },
+    "body": {}
+}
+2021-04-03 14:15:52,079 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430551750] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617430551750"
+    },
+    "body": {}
+}
+2021-04-03 14:15:53,338 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430553013] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617430553013"
+    },
+    "body": {}
+}
+2021-04-03 14:15:53,344 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617430553013] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617430553013"
+    },
+    "body": {}
+}
+2021-04-03 14:18:25,572 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430705553] from: ::ffff:127.0.0.1 costs: 5ms data:{
+    "param": {
+        "_time": "1617430705553"
+    },
+    "body": {}
+}
+2021-04-03 14:22:12,311 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430932294] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617430932294"
+    },
+    "body": {}
+}
+2021-04-03 14:22:12,342 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617430932294] from: ::ffff:127.0.0.1 costs: 36ms data:{
+    "param": {
+        "_time": "1617430932294"
+    },
+    "body": {}
+}
+2021-04-03 14:22:16,376 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617430936355] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617430936355"
+    },
+    "body": {}
+}
+2021-04-03 14:22:16,378 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430936355] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617430936355"
+    },
+    "body": {}
+}
+2021-04-03 14:22:24,031 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617430944008] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617430944008"
+    },
+    "body": {}
+}
+2021-04-03 14:22:24,040 DEBUG 22348  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617430944008] from: ::ffff:127.0.0.1 costs: 16ms data:{
+    "param": {
+        "_time": "1617430944008"
+    },
+    "body": {}
+}
+2021-04-03 14:24:44,144 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431084105] from: ::ffff:127.0.0.1 costs: 16ms data:{
+    "param": {
+        "_time": "1617431084105"
+    },
+    "body": {}
+}
+2021-04-03 14:24:44,149 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431084105] from: ::ffff:127.0.0.1 costs: 18ms data:{
+    "param": {
+        "_time": "1617431084105"
+    },
+    "body": {}
+}
+2021-04-03 14:25:15,166 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431115151] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617431115151"
+    },
+    "body": {}
+}
+2021-04-03 14:25:17,415 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431117407] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431117407"
+    },
+    "body": {}
+}
+2021-04-03 14:25:19,386 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431119376] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431119376"
+    },
+    "body": {}
+}
+2021-04-03 14:25:24,300 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431123982] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431123982"
+    },
+    "body": {}
+}
+2021-04-03 14:25:29,535 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431129527] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431129527"
+    },
+    "body": {}
+}
+2021-04-03 14:30:19,981 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431419961] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617431419961"
+    },
+    "body": {}
+}
+2021-04-03 14:30:19,983 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431419961] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617431419961"
+    },
+    "body": {}
+}
+2021-04-03 14:30:20,308 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431419961] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617431419961"
+    },
+    "body": {}
+}
+2021-04-03 14:30:48,287 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431447900] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617431447900"
+    },
+    "body": {}
+}
+2021-04-03 14:30:48,319 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add?_time=1617431447900] from: ::ffff:127.0.0.1 costs: 66ms data:{
+    "param": {
+        "_time": "1617431447900"
+    },
+    "body": {
+        "sex": "ffds",
+        "address": "dsfghgfdsdf",
+        "leader": "sdf",
+        "telphone": "568282",
+        "buildName": "德馨#2"
+    }
+}
+2021-04-03 14:30:55,340 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431455316] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617431455316"
+    },
+    "body": {}
+}
+2021-04-03 14:30:55,362 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431455316] from: ::ffff:127.0.0.1 costs: 35ms data:{
+    "param": {
+        "_time": "1617431455316"
+    },
+    "body": {}
+}
+2021-04-03 14:30:55,371 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431455316] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431455316"
+    },
+    "body": {}
+}
+2021-04-03 14:33:25,772 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431605743] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617431605743"
+    },
+    "body": {}
+}
+2021-04-03 14:33:26,103 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431605743] from: ::ffff:127.0.0.1 costs: 9ms data:{
+    "param": {
+        "_time": "1617431605743"
+    },
+    "body": {}
+}
+2021-04-03 14:33:26,109 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431605743] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617431605743"
+    },
+    "body": {}
+}
+2021-04-03 14:33:39,717 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431619372] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617431619372"
+    },
+    "body": {}
+}
+2021-04-03 14:33:39,746 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add?_time=1617431619372] from: ::ffff:127.0.0.1 costs: 47ms data:{
+    "param": {
+        "_time": "1617431619372"
+    },
+    "body": {
+        "sex": "dfv",
+        "address": "aesfgrhhgdfsdfghg",
+        "leader": "sdfggb",
+        "telphone": "65386",
+        "buildName": "德馨#6"
+    }
+}
+2021-04-03 14:33:58,604 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431638583] from: ::ffff:127.0.0.1 costs: 9ms data:{
+    "param": {
+        "_time": "1617431638583"
+    },
+    "body": {}
+}
+2021-04-03 14:33:58,636 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add?_time=1617431638583] from: ::ffff:127.0.0.1 costs: 44ms data:{
+    "param": {
+        "_time": "1617431638583"
+    },
+    "body": {
+        "sex": "dfv",
+        "address": "aesfgrhhgdfsdfghg",
+        "leader": "sdfggb",
+        "telphone": "65386",
+        "buildName": "德馨#6"
+    }
+}
+2021-04-03 14:34:11,243 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431650905] from: ::ffff:127.0.0.1 costs: 14ms data:{
+    "param": {
+        "_time": "1617431650905"
+    },
+    "body": {}
+}
+2021-04-03 14:34:11,273 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add?_time=1617431650905] from: ::ffff:127.0.0.1 costs: 50ms data:{
+    "param": {
+        "_time": "1617431650905"
+    },
+    "body": {
+        "sex": "dfv",
+        "address": "aesfgrhhgdfsdfghg",
+        "leader": "sdfggb",
+        "telphone": "65386",
+        "buildName": "德馨#6"
+    }
+}
+2021-04-03 14:34:15,374 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431655353] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617431655353"
+    },
+    "body": {}
+}
+2021-04-03 14:34:15,376 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431655353] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617431655353"
+    },
+    "body": {}
+}
+2021-04-03 14:34:15,393 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431655353] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431655353"
+    },
+    "body": {}
+}
+2021-04-03 14:34:40,467 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431680449] from: ::ffff:127.0.0.1 costs: 9ms data:{
+    "param": {
+        "_time": "1617431680449"
+    },
+    "body": {}
+}
+2021-04-03 14:34:40,498 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431680449] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617431680449"
+    },
+    "body": {}
+}
+2021-04-03 14:34:40,503 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431680449] from: ::ffff:127.0.0.1 costs: 10ms data:{
+    "param": {
+        "_time": "1617431680449"
+    },
+    "body": {}
+}
+2021-04-03 14:35:26,482 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431726455] from: ::ffff:127.0.0.1 costs: 16ms data:{
+    "param": {
+        "_time": "1617431726455"
+    },
+    "body": {}
+}
+2021-04-03 14:35:26,485 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add?_time=1617431726455] from: ::ffff:127.0.0.1 costs: 21ms data:{
+    "param": {
+        "_time": "1617431726455"
+    },
+    "body": {
+        "sex": "sdfbg",
+        "address": "sdfg",
+        "leader": "dfghf",
+        "telphone": "dsfdgbf",
+        "buildName": "德馨#6"
+    }
+}
+[31m2021-04-03 14:35:26,488 ERROR 16268  --- [LAPTOP-UCE87BE9] - nodejs.SequelizeDatabaseError: Incorrect integer value: 'dsfdgbf' for column 'telphone' at row 1[39m
+[31m    at Query.formatError (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:244:17)[39m
+[31m    at Execute.handler [as onResult] (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)[39m
+[31m    at Execute.execute (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\commands\command.js:30:14)[39m
+[31m    at Connection.handlePacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:425:32)[39m
+[31m    at PacketParser.onPacket (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:75:12)[39m
+[31m    at PacketParser.executeStart (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\packet_parser.js:75:16)[39m
+[31m    at Socket.<anonymous> (F:\workspace_vue\fe-doc-manage1\lin-cms-koa\node_modules\mysql2\lib\connection.js:82:25)[39m
+[31m    at Socket.emit (events.js:315:20)[39m
+[31m    at addChunk (internal/streams/readable.js:309:12)[39m
+[31m    at readableAddChunk (internal/streams/readable.js:284:9)[39m
+[31m    at Socket.Readable.push (internal/streams/readable.js:223:10)[39m
+[31m    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)[39m
+[31mname: "SequelizeDatabaseError"[39m
+[31mparent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'dsfdgbf' for column 'telphone' at row 1","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#6","dfghf","sdfbg","sdfg","dsfdgbf","2021-04-03 14:35:26","2021-04-03 14:35:26"]}[39m
+[31moriginal: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: 'dsfdgbf' for column 'telphone' at row 1","sql":"INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":["德馨#6","dfghf","sdfbg","sdfg","dsfdgbf","2021-04-03 14:35:26","2021-04-03 14:35:26"]}[39m
+[31msql: "INSERT INTO `buildList` (`id`,`buildName`,`leader`,`sex`,`address`,`telphone`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?);"[39m
+[31mparameters: ["德馨#6","dfghf","sdfbg","sdfg","dsfdgbf","2021-04-03 14:35:26","2021-04-03 14:35:26"][39m
+[31mpid: 16268[39m
+[31mhostname: LAPTOP-UCE87BE9[39m
+[31m[39m
+2021-04-03 14:35:34,354 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431733998] from: ::ffff:127.0.0.1 costs: 32ms data:{
+    "param": {
+        "_time": "1617431733998"
+    },
+    "body": {}
+}
+2021-04-03 14:35:34,358 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/buildList/add?_time=1617431733998] from: ::ffff:127.0.0.1 costs: 39ms data:{
+    "param": {
+        "_time": "1617431733998"
+    },
+    "body": {
+        "sex": "sdfbg",
+        "address": "sdfg",
+        "leader": "dfghf",
+        "telphone": "3659356",
+        "buildName": "德馨#6"
+    }
+}
+2021-04-03 14:39:07,582 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431947565] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617431947565"
+    },
+    "body": {}
+}
+2021-04-03 14:39:07,664 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617431947565] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617431947565"
+    },
+    "body": {}
+}
+2021-04-03 14:39:07,885 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617431947565] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617431947565"
+    },
+    "body": {}
+}
+2021-04-03 14:54:01,274 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617432841218] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617432841218"
+    },
+    "body": {}
+}
+2021-04-03 14:54:28,022 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/repair.submit?_time=1617432868012] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {
+        "_time": "1617432868012"
+    },
+    "body": {
+        "name": "defg",
+        "dateTime": "2021-04-04T16:02:00.000Z",
+        "buildName": "德馨#5",
+        "telphone": "6636336",
+        "docId": "652",
+        "desc": "xscdvgfbnhjmhngfdsazaXSDCVFBG"
+    }
+}
+2021-04-03 14:54:47,315 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617432887296] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617432887296"
+    },
+    "body": {}
+}
+2021-04-03 14:55:06,464 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/repair/submit?_time=1617432906146] from: ::ffff:127.0.0.1 costs: 1ms data:{
+    "param": {
+        "_time": "1617432906146"
+    },
+    "body": {
+        "name": "DFGHM",
+        "dateTime": "2021-05-13T16:00:00.000Z",
+        "buildName": "德馨#3",
+        "telphone": "5863",
+        "docId": "3695",
+        "desc": "ASDFGBHJMKL,JHGFVDS"
+    }
+}
+2021-04-03 14:56:06,639 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617432966624] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617432966624"
+    },
+    "body": {}
+}
+2021-04-03 14:56:26,389 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/repair/submit?_time=1617432986343] from: ::ffff:127.0.0.1 costs: 40ms data:{
+    "param": {
+        "_time": "1617432986343"
+    },
+    "body": {
+        "name": "dvfb",
+        "dateTime": "2021-04-12T16:00:00.000Z",
+        "buildName": "德馨#3",
+        "telphone": "258727",
+        "docId": "254",
+        "detail": "wdefghjhhgfdfsgh"
+    }
+}
+2021-04-03 14:56:47,011 DEBUG 16268  --- [LAPTOP-UCE87BE9] - [POST] -> [/doc/repair/submit?_time=1617433006655] from: ::ffff:127.0.0.1 costs: 43ms data:{
+    "param": {
+        "_time": "1617433006655"
+    },
+    "body": {
+        "name": "dfrgthyj",
+        "dateTime": "2021-04-11T16:00:00.000Z",
+        "buildName": "德馨#3",
+        "telphone": "69363",
+        "docId": "5422",
+        "detail": "zxvcgvhmjk,jmnvds"
+    }
+}
+2021-04-03 15:05:42,468 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search] from: ::1 costs: 22ms data:{
+    "param": {},
+    "body": {}
+}
+2021-04-03 15:17:44,804 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617434264744] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617434264744"
+    },
+    "body": {}
+}
+2021-04-03 15:17:50,432 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617434270418] from: ::ffff:127.0.0.1 costs: 3ms data:{
+    "param": {
+        "_time": "1617434270418"
+    },
+    "body": {}
+}
+2021-04-03 15:18:35,555 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617434315512] from: ::ffff:127.0.0.1 costs: 7ms data:{
+    "param": {
+        "_time": "1617434315512"
+    },
+    "body": {}
+}
+2021-04-03 15:19:12,375 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617434352352] from: ::ffff:127.0.0.1 costs: 12ms data:{
+    "param": {
+        "_time": "1617434352352"
+    },
+    "body": {}
+}
+2021-04-03 15:19:54,095 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617434394082] from: ::ffff:127.0.0.1 costs: 6ms data:{
+    "param": {
+        "_time": "1617434394082"
+    },
+    "body": {}
+}
+2021-04-03 15:20:28,671 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617434428652] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617434428652"
+    },
+    "body": {}
+}
+2021-04-03 15:24:31,446 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617434671409] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617434671409"
+    },
+    "body": {}
+}
+2021-04-03 15:28:38,304 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617434918274] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617434918274"
+    },
+    "body": {}
+}
+2021-04-03 15:28:38,319 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617434918274] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617434918274"
+    },
+    "body": {}
+}
+2021-04-03 15:28:38,337 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617434918274] from: ::ffff:127.0.0.1 costs: 43ms data:{
+    "param": {
+        "_time": "1617434918274"
+    },
+    "body": {}
+}
+2021-04-03 15:30:10,235 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617435010205] from: ::ffff:127.0.0.1 costs: 15ms data:{
+    "param": {
+        "_time": "1617435010205"
+    },
+    "body": {}
+}
+2021-04-03 15:30:10,240 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildList/search?_time=1617435010205] from: ::ffff:127.0.0.1 costs: 17ms data:{
+    "param": {
+        "_time": "1617435010205"
+    },
+    "body": {}
+}
+2021-04-03 15:30:10,247 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617435010205] from: ::ffff:127.0.0.1 costs: 2ms data:{
+    "param": {
+        "_time": "1617435010205"
+    },
+    "body": {}
+}
+2021-04-03 15:36:51,053 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617435411023] from: ::ffff:127.0.0.1 costs: 9ms data:{
+    "param": {
+        "_time": "1617435411023"
+    },
+    "body": {}
+}
+2021-04-03 15:36:51,809 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617435411795] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617435411795"
+    },
+    "body": {}
+}
+2021-04-03 15:38:22,335 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617435502312] from: ::ffff:127.0.0.1 costs: 11ms data:{
+    "param": {
+        "_time": "1617435502312"
+    },
+    "body": {}
+}
+2021-04-03 15:42:29,226 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/repair/search?_time=1617435749204] from: ::ffff:127.0.0.1 costs: 8ms data:{
+    "param": {
+        "_time": "1617435749204"
+    },
+    "body": {}
+}
+2021-04-03 15:47:19,809 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617436039474] from: ::ffff:127.0.0.1 costs: 13ms data:{
+    "param": {
+        "_time": "1617436039474"
+    },
+    "body": {}
+}
+2021-04-03 15:47:19,841 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/docList/search?_time=1617436039474] from: ::ffff:127.0.0.1 costs: 43ms data:{
+    "param": {
+        "_time": "1617436039474"
+    },
+    "body": {}
+}
+2021-04-03 15:47:20,062 DEBUG 18568  --- [LAPTOP-UCE87BE9] - [GET] -> [/doc/buildName/search?_time=1617436039474] from: ::ffff:127.0.0.1 costs: 4ms data:{
+    "param": {
+        "_time": "1617436039474"
+    },
+    "body": {}
+}
