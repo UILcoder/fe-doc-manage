@@ -55,10 +55,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-button{
-  display: block;
-  margin-top: 20px;
-  float: right;
-
+.el-button {
+  margin: 100px 100px 0;
 }
 </style>

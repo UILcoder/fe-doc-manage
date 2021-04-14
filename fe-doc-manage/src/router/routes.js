@@ -4,11 +4,11 @@ import Layout from '@/layout/index.vue'
 
 
 export const constantRoutes = [
-  // {
-  //   path: '/login',
-  //   component: () => import('@/views/login/index'),
-  //   hidden: true
-  // },
+  {
+    path: '/login',
+    component: () => import('@/views/login/index'),
+    hidden: true
+  },
   {
     path: '/home',
     component: Layout,
