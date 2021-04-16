@@ -7,14 +7,19 @@ const user = {
 
   mutations: {
     setUserInfo: (state, payload) => {
-      state.userInfo = { ...payload };
-      Session.set('userInfo', state.userInfo, 50000);
+      state.userInfo = { ...payload }
+      // state.userInfo = { user: payload.userName, password: payload.password, role: payload.role }
+      Session.set('userInfo', state.userInfo);
     },
   },
 
   actions: {
     setUserInfo({ commit }, payload) {
-      commit('setUserInfo', payload);
+      console.log(payload)
+      commit('setUserInfo', payload)
+      // payload.then(res => {
+      //   commit('setUserInfo', res)
+      // })
     }
   }
 };

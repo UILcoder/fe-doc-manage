@@ -3,9 +3,15 @@
 import Layout from '@/layout/index.vue'
 
 
-export const constantRoutes = [
+const constantRoutes = [
+  {
+    path: '*',
+    redirect: '/login'
+  },
   {
     path: '/login',
+    name: 'login',
+    meta: { title: '登录' },
     component: () => import('@/views/login/index'),
     hidden: true
   },
@@ -13,6 +19,7 @@ export const constantRoutes = [
     path: '/home',
     component: Layout,
     redirect: '/home',
+    role: ['admin', 'student'],
     children: [
       {
 
@@ -30,6 +37,7 @@ export const constantRoutes = [
     path: '/user',
     component: Layout,
     redirect: '/user',
+    role: ['admin', 'student'],
     children: [
       {
 
@@ -47,6 +55,7 @@ export const constantRoutes = [
     path: '/buildManage',
     component: Layout,
     redirect: '/buildManage',
+    role: ['admin'],
     children: [
       {
         path: 'buildManage',
@@ -62,6 +71,7 @@ export const constantRoutes = [
     path: '/list',
     component: Layout,
     redirect: '/list',
+    role: ['admin'],
     children: [
       {
         path: 'list',
@@ -77,6 +87,7 @@ export const constantRoutes = [
     path: '/studentManage',
     component: Layout,
     redirect: '/studentManage',
+    role: ['admin'],
     children: [
       {
         path: 'studentManage',
@@ -92,6 +103,7 @@ export const constantRoutes = [
     path: '/backSerive',
     component: Layout,
     redirect: '/backSerive',
+    role: ['student', 'admin'],
     meta: { title: '后勤服务', icon: 'back' },
     children: [
       {
@@ -116,6 +128,7 @@ export const constantRoutes = [
     path: '/lifeSerive',
     component: Layout,
     redirect: '/lifeSerive',
+    role: ['student'],
     meta: { title: '生活服务', icon: 'life' },
     children: [
       {
@@ -140,6 +153,7 @@ export const constantRoutes = [
     path: '/static',
     component: Layout,
     redirect: '/static',
+    role: ['admin'],
     meta: { title: '统计中心', icon: 'static' },
     children: [
       {
@@ -159,13 +173,7 @@ export const constantRoutes = [
         component: () => import('@/views/static/repairStatic/index')
       }
     ]
-  },
-  {
-    path: '**',
-    redirect: {
-      name: 'user'
-    }
   }
 ]
 
-export const asyncRoutes = []
+export default constantRoutes

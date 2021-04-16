@@ -4,10 +4,10 @@
     <div class="contain" v-if="showLogin">
       <el-form :inline='true' :model="formInline">
         <el-form-item label="账号:">
-          <el-input v-model="username" placeholder="请输入账号" required></el-input>
+          <el-input v-model="formInline.username" placeholder="请输入账号" required></el-input>
         </el-form-item>
         <el-form-item label="密码:">
-          <el-input v-model="password" placeholder="请输入密码" required></el-input>
+          <el-input v-model="formInline.password" placeholder="请输入密码" required></el-input>
         </el-form-item>
         <el-form-item>
           <el-button plain @click="handle('login')">登录</el-button>
@@ -22,12 +22,19 @@
 
 <script>
 import regit from './regit.vue';
+import { Session } from '../../utils/storage';
+import store from '../../store'
+import router from '../../router'
 
 export default {
   data() {
     return {
       showRegit: false,
-      showLogin: true
+      showLogin: true,
+      formInline: {
+        username: '',
+        password: ''
+      }
     }
   },
   components: {
@@ -38,20 +45,36 @@ export default {
      * 查询用户信息
      */
     getInfo() {
-      this.$peopleInfoService.getInfo()
+      this.$peopleInfoService.getInfo(this.formInline).then(res => {
+        console.log(res)
+      })
     },
     /**
      * 登陆和注册按钮
      */
     handle(item) {
       if (item === 'login') {
-        this.$router.push('/user/user')
+        store.dispatch('setUserInfo', 'aaa')
+        store.dispatch('permission/generateRoutes', 'admin')
+        router.addRoutes(Session.get('filterRoutes'))
+        this.$router.push('/home/home')
+        // store.dispatch('setUserInfo', this.$peopleInfoService.getInfo(this.formInline))
+        // const userInfo = session.get('userInfo')
+        // if (userInfo.role != null) {
+        //   store.dispatch('permission/generateRoutes', userInfo.role).then(res => {
+        //     // console.log(res)
+        //     router.addRoutes(res)
+        //   })
+        //   this.$router.push('/home/home')
+        // } else {
+        //   alert('用户名或密码错误')
+        // }
       } else {
         this.showRegit = true
         this.showLogin = false
       }
-    }
-  },
+    },
+  }
 
 }
 </script>

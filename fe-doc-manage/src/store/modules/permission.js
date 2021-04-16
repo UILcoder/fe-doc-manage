@@ -1,4 +1,5 @@
-import { asyncRoutes, constantRoutes } from '@/router/routes'
+import constantRoutes from '@/router/routes'
+import { Session } from '../../utils/storage'
 
 /**
  * Use meta.role to determine if the current user has permission
@@ -6,12 +7,8 @@ import { asyncRoutes, constantRoutes } from '@/router/routes'
  * @param route
  */
 function hasPermission(roles, route) {
-  if (route.meta && route.meta.roles) {
-    // 路由中只要有包含roles中角色的返回true, 一个没有则返回false
-    // roles ---> [editor]
-    return roles.some(role => route.meta.roles.includes(role))
-  }
-  return true
+  // console.log(route)
+  return route.role.includes(roles)
 }
 
 /**
@@ -22,26 +19,23 @@ function hasPermission(roles, route) {
 export function filterAsyncRoutes(routes, roles) {
   const res = []
   routes.forEach(route => {
-    const tmp = { ...route }
+    const tmp = route
     if (hasPermission(roles, tmp)) {
-      if (tmp.children) {
-        tmp.children = filterAsyncRoutes(tmp.children, roles)
-      }
       res.push(tmp)
     }
   })
+  console.log(res)
   return res
 }
 
 const state = {
-  routes: [],
-  addRoutes: []
+  routes: Session.get('filterRoutes')
 }
 
 const mutations = {
   SET_ROUTES: (state, routes) => {
-    state.addRoutes = routes
-    state.routes = constantRoutes.concat(routes)
+    state.routes = routes
+    Session.set('filterRoutes', state.routes)
   }
 }
 
@@ -49,14 +43,10 @@ const actions = {
   generateRoutes({ commit }, roles) {
     return new Promise(resolve => {
       // 可以访问的路由
-      let accessedRoutes
+      let accessedRoutes = {}
       // 如果角色中包含admin角色
-      if (roles.includes('admin')) {
-        // accessedRoutes等于
-        accessedRoutes = asyncRoutes || []
-      } else {
-        accessedRoutes = filterAsyncRoutes(asyncRoutes, roles)
-      }
+      const routes = constantRoutes.filter((i, index) => index > 1)
+      accessedRoutes = filterAsyncRoutes(routes, roles)
       commit('SET_ROUTES', accessedRoutes)
       resolve(accessedRoutes)
     })
